@@ -27,18 +27,18 @@ body {
 }
 
 .carousel-title {
+	width: 100%;
 	z-index: 1;
 	position: absolute;
-	top: 40%;
-	left: 15%;
+	top: 35%;
 }
 
 .carousel-title h1 {
+	width: 80%;
 	font-size: 400%;
 	@media screen and (max-width: $xs-max-width) {
-		font-size: 250%;
+		font-size: 200%;
 	}
-
 	color: white;
 }
 
