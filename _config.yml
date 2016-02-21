@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   для реализации проектов и проведения мероприятий высокого уровня, место, 
   куда прийти хочет каждый.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://127.0.0.1"
+url: "http://kmax.github.io/photophond.ru"
 
 # Build settings
 markdown: kramdown
