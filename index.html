@@ -2,22 +2,159 @@
 layout: default
 ---
 
-<div class="home">
+ <!-- Full Page Image Background Carousel Header -->
+<header id="slides" class="carousel slide">
+  <!-- Title -->
+  <div class="carousel-title">
+    <h1>Международный фонд <br/> &laquo;Петербургская Фотолетопись&raquo;</h1>
+  </div>
 
-  <h1 class="page-heading">Posts</h1>
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0" class="active"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+      <li data-target="#slides" data-slide-to="3"></li>
+      <li data-target="#slides" data-slide-to="4"></li>
+      <li data-target="#slides" data-slide-to="5"></li>
+      <li data-target="#slides" data-slide-to="6"></li>
+  </ol>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <!-- Wrapper for Slides -->
+  <div class="carousel-inner">
+      <div class="item active">
+          <!-- Set the first background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('/images/slider_0.JPG');"></div>
+          <div class="carousel-caption">
+              <h2></h2>
+          </div>
+      </div>
+      <div class="item">
+          <!-- Set the second background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('/images/slider_1.JPG');"></div>
+          <div class="carousel-caption">
+              <h2></h2>
+          </div>
+      </div>
+      <div class="item">
+          <!-- Set the third background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('/images/slider_2.JPG');"></div>
+          <div class="carousel-caption">
+              <h2></h2>
+          </div>
+      </div>
+      <div class="item">
+          <!-- Set the third background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('/images/slider_3.JPG');"></div>
+          <div class="carousel-caption">
+              <h2></h2>
+          </div>
+      </div>
+      <div class="item">
+          <!-- Set the third background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('/images/slider_4.JPG');"></div>
+          <div class="carousel-caption">
+              <h2></h2>
+          </div>
+      </div>
+      <div class="item">
+          <!-- Set the third background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('/images/slider_5.JPG');"></div>
+          <div class="carousel-caption">
+              <h2></h2>
+          </div>
+      </div>
+      <div class="item">
+          <!-- Set the third background image using inline CSS below. -->
+          <div class="fill" style="background-image:url('/images/slider_6.JPG');"></div>
+          <div class="carousel-caption">
+              <h2></h2>
+          </div>
+      </div>
+  </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#slides" data-slide="prev">
+      <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#slides" data-slide="next">
+      <span class="icon-next"></span>
+  </a>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</header>
+
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 page-header">
+        <h1>О нас</h1>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <p>
+            Некоммерческая организация, коммуникационная площадка в центре Петербурга для реализации проектов и проведения мероприятий высокого уровня, место, куда прийти хочет каждый.
+            </p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 page-header">
+        <h1>Услуги</h1>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="list-unstyled">
+              <li><i class="fa fa-circle-o"></i> Оказание помощи различным социально-культурным мероприятиям.</li>
+              <li><i class="fa fa-circle-o"></i> Проведение выставок, конференций, семинаров, симпозиумов, фестивалей, встреч и иных различных мероприятий.</li>
+              <li><i class="fa fa-circle-o"></i> Подготовка специалистов в области фотожурналистики, проведение фотоконкурсов.</li>
+              <li><i class="fa fa-circle-o"></i> Издание информационных материалов, связанных с главными политическими, экономическими, культурными, социальными и историческими событиями Санкт-Петербурга, России и Мира.</li>
+            </ul>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacts">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 page-header">
+        <h1>Контакты</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <ul class="list-unstyled">
+          <li><span class="fa fa-envelope"></span> info@photophond.ru</li>
+          <li><span class="fa fa-phone"></span> +7 (812) 000-00-00</li>
+          <li><span class="fa fa-map-marker"></span> 119019, Санкт-Петербург, Невский проспект, 88</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.4948796464114!2d30.350940616939585!3d59.93231209885761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a4306b6a7b%3A0x1deae252d5858f6a!2sNevsky+pr.%2C+88%2C+Sankt-Peterburg%2C+191025!5e0!3m2!1sen!2sru!4v1456065259957" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="row">
+      
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <p>&copy; 2016 Международный фонд "Петербургская Фотолетопись"</p>
+        </div>
+    </div>
+    <!-- /.row -->
+  </div>
+</footer>
 
 </div>
+<!-- /.container -->
