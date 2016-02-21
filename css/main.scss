@@ -8,6 +8,8 @@
     "base"
 ;
 
+$xs-max-width: 768px;
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	line-height: 200%;
@@ -33,6 +35,10 @@ body {
 
 .carousel-title h1 {
 	font-size: 400%;
+	@media screen and (max-width: $xs-max-width) {
+		font-size: 250%;
+	}
+
 	color: white;
 }
 
